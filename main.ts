@@ -1,7 +1,3 @@
-controller.player2.onButtonEvent(ControllerButton.Left, ControllerButtonEvent.Pressed, function () {
-    mySprite2.x += -1
-})
-let mySprite2: Sprite = null
 let mySprite = sprites.create(img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
@@ -21,7 +17,8 @@ let mySprite = sprites.create(img`
 . . . . . . . . . . . . . . . . 
 `, SpriteKind.Player)
 controller.player1.moveSprite(mySprite)
-mySprite2 = sprites.create(img`
+mySprite.setFlag(SpriteFlag.StayInScreen, true)
+let mySprite2 = sprites.create(img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
@@ -40,8 +37,12 @@ mySprite2 = sprites.create(img`
 . . . . . . . . . . . . . . . . 
 `, SpriteKind.Player)
 mySprite2.setPosition(100, 60)
+mySprite2.vx += 40
+mySprite2.vy += 60
+mySprite2.setFlag(SpriteFlag.BounceOnWall, true)
 controller.moveSprite(mySprite, 100, 100)
 scene.setBackgroundColor(11)
 mySprite.say("yay", 2000)
 pause(2000)
 mySprite.say("we did it!")
+mySprite2.say("yippee!")
