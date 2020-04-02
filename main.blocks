@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="I*Ra${*R~7F=dwKKhagc">mySprite</variable><variable id="YE/3/Xg]xEB]t%XH9PM[" type="KIND_SpriteKind">Player</variable><variable id="tq-Fe2znCH3Mh(M2DJ,7" type="KIND_SpriteKind">Projectile</variable><variable id="j*ue(Et?cj?%38Bhgwh?" type="KIND_SpriteKind">Food</variable><variable id="{-4iR%C_fU!jaU?qr]kc" type="KIND_SpriteKind">Enemy</variable></variables><block type="pxt-on-start" y="0" x="0"><statement name="HANDLER"><block type="variables_set"><field id="I*Ra${*R~7F=dwKKhagc" name="VAR">mySprite</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . d d d d d d d . . . . 
+. . . . d d d d d d d d d . . . 
+. . . . d d d d d d d d d . . . 
+. . . . d d f d d d f d d . . . 
+. . . . d d d d d d d d d . . . 
+. . . . d d d d d d d d d . . . 
+. . . . d f f d d d f f d . . . 
+. . . . d d f f f f f d d . . . 
+. . . . . d d d d d d d . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _input_init="true" _expanded="2"></mutation><value name="sprite"><shadow type="variables_get"><field id="I*Ra${*R~7F=dwKKhagc" name="VAR">mySprite</field></shadow></value><value name="vx"><shadow type="math_number"><field name="NUM">100</field></shadow></value><value name="vy"><shadow type="math_number"><field name="NUM">100</field></shadow></value><next><block type="gamesetbackgroundcolor"><value name="color"><shadow type="colorindexpicker"><field name="index">0</field></shadow></value></block></next></block></next></block></statement></block></xml>
