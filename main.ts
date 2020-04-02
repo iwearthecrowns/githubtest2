@@ -18,4 +18,6 @@ let mySprite = sprites.create(img`
 `, SpriteKind.Player)
 controller.moveSprite(mySprite, 100, 100)
 scene.setBackgroundColor(11)
-mySprite.say("yay")
+mySprite.say("yay", 2000)
+pause(2000)
+mySprite.say("we did it!")
